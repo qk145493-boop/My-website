@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Dreamy Profile</title>
+<style>
+:root{color-scheme:dark;--bg:#050615;--text:#f7f7ff;--muted:#b8b9d6;--blue:#5da9ff;--purple:#a76cff}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+body{overflow:hidden}.app{min-height:100vh;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 70% 25%,#252064 0,transparent 28%),radial-gradient(circle at 20% 75%,#101e49 0,transparent 30%),linear-gradient(135deg,#02030b,#09091c 55%,#050716)}
+.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";background-image:radial-gradient(circle,#fff 1px,transparent 1.5px);background-size:83px 83px;opacity:.45;animation:drift 22s linear infinite}.stars:before{background-size:137px 137px;opacity:.3;animation-duration:34s}.stars:after{background-size:211px 211px;opacity:.2;animation-duration:48s}
+.moon{position:absolute;top:10%;right:12%;width:115px;height:115px;border-radius:50%;background:linear-gradient(135deg,#fff,#cddcff);box-shadow:0 0 35px #8ca9ff,0 0 90px #6c68ff66}.moon:after{content:"";position:absolute;width:115px;height:115px;border-radius:50%;background:#09091c;left:30px;top:-10px}
+.content{position:relative;text-align:center;width:min(92vw,620px);padding:35px;animation:rise 1s ease-out}.avatar{width:125px;height:125px;border-radius:50%;margin:0 auto 24px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--purple));box-shadow:0 0 35px #6f8cff99;position:relative}.avatar span{font-size:46px}.avatar:before{content:"";position:absolute;inset:-6px;border:1px solid #9c9cff88;border-radius:50%}
+h1{font-size:clamp(38px,9vw,70px);letter-spacing:-2px;margin:0;background:linear-gradient(90deg,#fff,#a9cfff,#c29aff);-webkit-background-clip:text;background-clip:text;color:transparent}.handle{color:var(--muted);margin:8px 0 18px;font-size:16px}.bio{font-size:17px;color:#e4e4f5;line-height:1.7;max-width:460px;margin:0 auto 28px}.links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.links a{color:white;text-decoration:none;padding:12px 19px;border:1px solid #ffffff24;border-radius:999px;background:#ffffff0b;backdrop-filter:blur(12px);transition:.25s}.links a:hover{transform:translateY(-3px);border-color:#8ea8ff99;box-shadow:0 0 24px #5d72ff44;background:#ffffff14}.hint{margin-top:26px;color:#888aa9;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+@keyframes drift{to{transform:translate3d(20px,30px,0)}}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.moon{width:80px;height:80px;top:7%;right:8%}.moon:after{width:80px;height:80px;left:22px;top:-7px}.content{padding:22px}.avatar{width:105px;height:105px}.avatar span{font-size:38px}.bio{font-size:15px}}
+</style>
+</head>
+<body>
+<main class="app">
+<div class="stars"></div><div class="moon" aria-hidden="true"></div>
+<section class="content">
+<div class="avatar"><span>🌙</span></div>
+<h1></h1>
+<div class="handle"></div>
+<p class="bio">Lost somewhere between dreams, stars &amp; midnight thoughts. ✦</p>
+<nav class="links" aria-label="Social links"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Contact</a></nav>
+<div class="hint">dream • explore • shine</div>
+</section>
+</main>
+</body>
+</html>
